@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="todolist.xsl"?>
+<todo:todolist xmlns:todo="http://kotov.lv/xml-lgs/todo"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://kotov.lv/xml-lgs/todo todolist.xsd
+						http://kotov.lv/xml-lgs/payment payment.xsd">
+	<todo:whom>
+		<todo:person>
+			<todo:name>Olga</todo:name>
+			<todo:role>Māsa</todo:role>
+		</todo:person>
+	</todo:whom>
+	<todo:task>
+		<todo:action>nomazgāt</todo:action>
+		<todo:object>
+			<todo:desc>kaki</todo:desc>
+		</todo:object>
+	</todo:task>
+	<todo:task>
+		<todo:action>tīrīt</todo:action>
+		<todo:object>
+			<todo:desc>māju</todo:desc>
+		</todo:object>
+	</todo:task>
+	<todo:task>
+		<todo:action>samaksāt</todo:action>
+		<todo:object>
+			<payment xmlns="http://kotov.lv/xml-lgs/payment">
+				<PmtId>
+					<TxId>FT0221302132</TxId>
+					<EndToEndId>FT1318300898333</EndToEndId>
+				</PmtId>
+				<PmtStatus>
+					<Cd>P</Cd>
+					<Tm>2013.10.13T16:04</Tm>
+					<Descr>Tiek apstrādāts</Descr>
+				</PmtStatus>
+				<Dbtr>
+					<Nm> Vladimirs Kotovs</Nm>
+					<Id>
+						<Code>120283-11111</Code>
+						<Type>PK</Type>
+					</Id>
+				</Dbtr>
+				<DbtrAcct>
+					<IBAN>LV70PARX000000011111</IBAN>
+				</DbtrAcct>
+				<AmountCcy ccy="EUR">1.02</AmountCcy>
+				<Cdtr>
+					<nm>LAUMA TIMENIECE</nm>
+					<id>
+						<code>070791-12568 </code>
+						<type>PK</type>
+					</id>
+				</Cdtr>
+				<CdtrAcct>
+					<IBAN>LV85BATR1231231231231</IBAN>
+				</CdtrAcct>
+				<CdtrAgent>BATRLV2XXXX</CdtrAgent>
+				<Details>IKMĒNEŠA UZTURNAUDA</Details>
+			</payment>
+		</todo:object>
+	</todo:task>
+</todo:todolist>
+
+
+
